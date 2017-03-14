@@ -28,7 +28,8 @@ public class WordStartActivity extends AppCompatActivity {
 
     public void onCountWordsButtonClicked(View Button) {
         Intent intent = new Intent(this, WordCountActivity.class);
-
+        String sentence = sentenceEditText.getText().toString();
+        intent.putExtra("sentence", sentence);
         startActivity(intent);
 
     }

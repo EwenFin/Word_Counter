@@ -27,6 +27,6 @@
         android:text="@string/count"
         android:textAllCaps="false"
         android:layout_gravity="center"
-        android:onClick="onCountWordsClicked"/>
+        android:onClick="onCountWordsButtonClicked"/>
 
 </LinearLayout>
