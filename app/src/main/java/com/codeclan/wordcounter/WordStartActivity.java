@@ -19,14 +19,14 @@ public class WordStartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_word_start);
+       setContentView(R.layout.activity_word_start);
 
         sentenceEditText = (EditText)findViewById(R.id.sentence);
         countWordsButton = (Button)findViewById(R.id.count_words_button);
         numberOfWords = (TextView)findViewById(R.id.number_of_words);
     }
-
     public void onCountWordsButtonClicked(View Button){
+        Intent intent = new Intent(this, word_counter.Activity.class);
 
     }
 }

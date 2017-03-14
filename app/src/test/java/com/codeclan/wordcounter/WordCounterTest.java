@@ -15,8 +15,9 @@ public class WordCounterTest {
     @Test
     public void getWordsTest(){
         String sentence = "This is a test";
-        String[] words = WordCounter.getIndividualWords(sentence);
-        assertEquals(words, "[This, is, a, test]");
+        ArrayList<String> words = WordCounter.getIndividualWords(sentence);
+        System.out.println(words);
+        assertEquals(words.toString(), "[This, is, a, test]");
     }
 
 

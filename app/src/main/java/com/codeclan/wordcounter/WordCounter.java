@@ -8,6 +8,7 @@ import java.util.*;
 public class WordCounter {
     private HashMap<String, Integer> wordcounter;
 
+
     public WordCounter(){
         wordcounter = new HashMap<String, Integer>();
 
@@ -21,8 +22,12 @@ public class WordCounter {
         this.wordcounter = wordcounter;
     }
 
-    public String[] getIndividualWords(String sentence){
+    public static ArrayList<String> getIndividualWords(String sentence){
         String[] words = sentence.split("\\W+");
-        return words;
+        ArrayList<String> contents = new ArrayList<>();
+        for ( String word : words) {
+            contents.add(word);
+        }
+    return contents;
     }
 }
