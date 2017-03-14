@@ -22,12 +22,17 @@ public class WordCounter {
         this.wordcounter = wordcounter;
     }
 
-    public static ArrayList<String> getIndividualWords(String sentence){
+    public static HashMap<String, Integer> getIndividualWords(String sentence){
         String[] words = sentence.split("\\W+");
-        ArrayList<String> contents = new ArrayList<>();
-        for ( String word : words) {
-            contents.add(word);
+        HashMap<String, Integer> occurences = new HashMap<String, Integer>();
+
+        for(String word : words){
+            Integer count = occurences.get(word);
+            if (count == null){
+                count = 0;
+            }
+            occurences.put(word, count +1);
         }
-    return contents;
+        return occurences;
     }
 }

@@ -21,12 +21,13 @@ public class WordStartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_word_start);
 
-        sentenceEditText = (EditText)findViewById(R.id.sentence);
-        countWordsButton = (Button)findViewById(R.id.count_words_button);
-        numberOfWords = (TextView)findViewById(R.id.number_of_words);
-    }
-    public void onCountWordsButtonClicked(View Button){
-        Intent intent = new Intent(this, word_counter.Activity.class);
 
-    }
-}
+//        sentenceEditText = (EditText)findViewById(R.id.sentence);
+//        countWordsButton = (Button)findViewById(R.id.count_words_button);
+//        numberOfWords = (TextView)findViewById(R.id.number_of_words);
+     }
+//    public void onCountWordsButtonClicked(View Button){
+//        Intent intent = new Intent(this, word_counter.Activity.class);
+//
+   }
+
