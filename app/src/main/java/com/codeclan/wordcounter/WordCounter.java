@@ -6,7 +6,7 @@ import java.util.*;
 public class WordCounter {
 
 
-    public static String Counter(String sentence){
+    public static String counter(String sentence){
         String[] words = sentence.toLowerCase().split("\\W+");
         HashMap<String, Integer> occurences = new HashMap<String, Integer>();
 
