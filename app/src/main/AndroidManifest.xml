@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WordCount"></activity>
+        <activity android:name=".WordCount" />
+        <activity android:name=".WordCountActivity"></activity>
     </application>
 
 </manifest>

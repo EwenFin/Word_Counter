@@ -1,7 +1,5 @@
 package com.codeclan.wordcounter;
 
-import java.lang.reflect.Array;
-
 import java.util.*;
 
 

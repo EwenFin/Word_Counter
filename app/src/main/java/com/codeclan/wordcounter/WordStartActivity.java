@@ -3,7 +3,6 @@ package com.codeclan.wordcounter;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,15 +18,20 @@ public class WordStartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       setContentView(R.layout.activity_word_start);
+        setContentView(R.layout.activity_word_start);
 
 
-//        sentenceEditText = (EditText)findViewById(R.id.sentence);
-//        countWordsButton = (Button)findViewById(R.id.count_words_button);
-//        numberOfWords = (TextView)findViewById(R.id.number_of_words);
-     }
-//    public void onCountWordsButtonClicked(View Button){
-//        Intent intent = new Intent(this, word_counter.Activity.class);
-//
-   }
+        sentenceEditText = (EditText) findViewById(R.id.sentence);
+        countWordsButton = (Button) findViewById(R.id.count_words_button);
+      //  numberOfWords = (TextView) findViewById(R.id.number_of_words);
+    }
+
+    public void onCountWordsButtonClicked(View Button) {
+        Intent intent = new Intent(this, WordCountActivity.class);
+
+        startActivity(intent);
+
+    }
+
+}
 
