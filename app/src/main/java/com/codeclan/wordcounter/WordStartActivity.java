@@ -23,7 +23,7 @@ public class WordStartActivity extends AppCompatActivity {
 
         sentenceEditText = (EditText) findViewById(R.id.sentence);
         countWordsButton = (Button) findViewById(R.id.count_words_button);
-      //  numberOfWords = (TextView) findViewById(R.id.number_of_words);
+        numberOfWords = (TextView) findViewById(R.id.number_of_words);
     }
 
     public void onCountWordsButtonClicked(View Button) {
