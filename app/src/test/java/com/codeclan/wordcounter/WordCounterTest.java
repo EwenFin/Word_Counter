@@ -15,7 +15,7 @@ public class WordCounterTest {
     @Test
     public void getWordsTest(){
         String sentence = "This is a test";
-        HashMap<String, Integer> words = WordCounter.getIndividualWords(sentence);
+        HashMap<String, Integer> words = WordCounter.WordCounter(sentence);
         assertEquals(words.toString(), "{a=1, test=1, This=1, is=1}");
     }
 
